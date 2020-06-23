@@ -43,7 +43,7 @@ resource "aws_instance" "hello-ip" {
         sudo service start apache2
         sudo chkonfig apache2 on
         ip_address=`hostname -I | awk '{print $1}' | tr -d "\n"`
-        echo "<h1>Hello from $ip_address !!" > /var/www/html/index.html
+        echo "<h1>Hello from $ip_address !!!" > /var/www/html/index.html
     EOF
   tags = {
     Name = "hello_ip_instance"
