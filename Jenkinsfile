@@ -19,7 +19,7 @@ try {
         secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
       ]]) {
         
-          sh '~/terraform init'
+          sh '~ec2-user/terraform init'
         
       }
     }
