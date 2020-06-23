@@ -19,7 +19,7 @@ try {
         secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
       ]]) {
         
-          sh 'export PATH=$PATH:/home/ec2-user; terraform init'
+          sh '~/terraform init'
         
       }
     }
