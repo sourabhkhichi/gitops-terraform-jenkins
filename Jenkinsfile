@@ -19,7 +19,7 @@ try {
         secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
       ]]) {
         
-          sh 'terraform init'
+          sh '/home/ec2-user/terraform init'
         
       }
     }
@@ -35,7 +35,7 @@ try {
         secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
       ]]) {
         
-          sh 'terraform plan'
+          sh '/home/ec2-user/terraform plan'
         
       }
     }
@@ -53,7 +53,7 @@ try {
           secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
         ]]) {
           
-            sh 'terraform apply -auto-approve'
+            sh '/home/ec2-user/terraform apply -auto-approve'
           
         }
       }
@@ -69,7 +69,7 @@ try {
           secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
         ]]) {
           
-            sh 'terraform show'
+            sh '/home/ec2-user/terraform show'
           
         }
       }
