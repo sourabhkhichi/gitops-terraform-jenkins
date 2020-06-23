@@ -3,7 +3,7 @@ provider "aws" {
 }
 #creating security group, allow ssh and http
 resource "aws_security_group" "hello-ip-ssh-http" {
-  name        = "hello-ip-ssh-http-sg"
+  name        = "hello-ip-ssh-http-sg-grp"
   description = "restricting traffic"
 
   ingress {
