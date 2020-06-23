@@ -19,7 +19,7 @@ try {
         secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
       ]]) {
         
-          sh 'sudo /home/ec2-user/terraform init'
+          sh 'export PATH=$PATH:/home/ec2-user; /home/ec2-user/terraform init'
         
       }
     }
@@ -35,7 +35,7 @@ try {
         secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
       ]]) {
         
-          sh 'sudo /home/ec2-user/terraform plan'
+          sh '/home/ec2-user/terraform plan'
         
       }
     }
